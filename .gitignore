@@ -1,0 +1,6 @@
+django_react/secret.py
+Dockerfile
+
+**/__pycache__
+*.pyc
+*.sqlite3
