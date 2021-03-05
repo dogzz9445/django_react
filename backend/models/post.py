@@ -5,12 +5,11 @@ from django.utils import timezone
 
 class Post(models.Model):
     # Fields
-    author = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     date = models.DateTimeField()
-    thumbnail = models.ImageField(u'썸네일', 
-                        upload_to='%Y/%m/%d', blank=True, null=True)
+    thumbnail = models.ImageField(u'썸네일', upload_to='%Y/%m/%d', blank=True, null=True)
     created_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
