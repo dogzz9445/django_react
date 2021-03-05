@@ -19,14 +19,10 @@ class Jibun(models.Model):
 
     # Metadata
     class Meta:
-        ordering = ['id', 'legal_dong_code']
+        ordering = ['id']
 
     # Methods
-    def get_absolute_url(self):
-        """Returns the url to access a particular instance of MyModelName."""
-        return reverse('model-detail-view', args=[str(self.id)])
-
     def __str__(self):
         """String for representing the MyModelName object (in Admin site etc.)."""
-        return self.my_field_name
+        return self.id
 

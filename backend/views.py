@@ -1,5 +1,4 @@
-from django.shortcuts import render
+from rest_framework import generics, serializers
+from rest_framework.response import Response
 
 # Create your views here.
-def index(request):
-    return render(request,'main/index.html')
