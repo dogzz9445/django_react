@@ -30,6 +30,3 @@ class Jibun(models.Model):
         """String for representing the MyModelName object (in Admin site etc.)."""
         return self.my_field_name
 
-
-
-
