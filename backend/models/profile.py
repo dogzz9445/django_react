@@ -2,14 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils import timezone
-# from django.contrib.auth.models import User as DjangoUser
 from django.contrib.auth.models import User
-
-# class Post(DjangoUser):
-
-#     # Metadata
-#     class Meta:
-#         ordering = ['id']
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
