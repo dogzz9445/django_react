@@ -4,5 +4,5 @@ from backend.views import PostListView
 
 urlpatterns = [
     #path('', views.index, name='index'),
-    path(r'^post/$', PostListView.as_view(), name='post'),
+    path('post/', PostListView.as_view(), name='post'),
 ]
